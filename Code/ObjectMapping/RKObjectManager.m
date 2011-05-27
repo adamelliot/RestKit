@@ -123,7 +123,7 @@ static RKObjectManager* sharedManager = nil;
 - (void)setFormat:(RKMappingFormat)format {
 	_format = format;
 	_mapper.format = format;
-	if (RKMappingFormatXML == _format) {
+	if (RKMappingFormatXML == _format || RKMappingFormatActiveResourceXML == _format) {
 		[_client setValue:@"application/xml" forHTTPHeaderField:@"Accept"];
 	} else if (RKMappingFormatJSON == _format) {
 		[_client setValue:@"application/json" forHTTPHeaderField:@"Accept"];

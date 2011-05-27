@@ -17,7 +17,8 @@
 // TODO: Replace this with MIME Type -> Parser registration
 typedef enum {
 	RKMappingFormatXML = 0,
-	RKMappingFormatJSON
+	RKMappingFormatJSON,
+	RKMappingFormatActiveResourceXML
 } RKMappingFormat;
 
 /**

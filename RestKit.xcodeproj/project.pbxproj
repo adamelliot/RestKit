@@ -199,6 +199,7 @@
 		3F4EAF5B1342071B00F944E4 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4EAF5A1342071B00F944E4 /* libxml2.dylib */; };
 		3F6C3A2E10FE749C008F47C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6C3A2D10FE749C008F47C5 /* Foundation.framework */; };
 		3F6C3A9610FE7524008F47C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6C3A9510FE7524008F47C5 /* UIKit.framework */; };
+		66FBD73813875639004D4630 /* RKActiveResourceXMLParser+libXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBD729138755B1004D4630 /* RKActiveResourceXMLParser+libXML.m */; };
 		73057FD61331AD5E001908EE /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 73057FC71331AA3D001908EE /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73057FD71331AD67001908EE /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 73057FC81331AA3D001908EE /* JSONKit.m */; };
 		73057FD91331AD99001908EE /* RKJSONParser+JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 73057FC41331A8F6001908EE /* RKJSONParser+JSONKit.m */; };
@@ -525,6 +526,8 @@
 		3F6C39B610FE738A008F47C5 /* UISpec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UISpec.xcodeproj; path = /Users/blake/Projects/two_toasters/InMotion/Libraries/UISpec/xcode/UISpec/UISpec.xcodeproj; sourceTree = "<absolute>"; };
 		3F6C3A2D10FE749C008F47C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3F6C3A9510FE7524008F47C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		66FBD7251387548E004D4630 /* RKActiveResourceXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKActiveResourceXMLParser.h; sourceTree = "<group>"; };
+		66FBD729138755B1004D4630 /* RKActiveResourceXMLParser+libXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RKActiveResourceXMLParser+libXML.m"; path = "ActiveResourceXML/RKActiveResourceXMLParser+libXML.m"; sourceTree = "<group>"; };
 		73057FC41331A8F6001908EE /* RKJSONParser+JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RKJSONParser+JSONKit.m"; sourceTree = "<group>"; };
 		73057FC71331AA3D001908EE /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = Vendor/JSONKit/JSONKit.h; sourceTree = "<group>"; };
 		73057FC81331AA3D001908EE /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = Vendor/JSONKit/JSONKit.m; sourceTree = "<group>"; };
@@ -815,6 +818,8 @@
 			children = (
 				253A08B81255212300976E89 /* RKJSONParser.h */,
 				259DF7831340294400233DF4 /* RKXMLParser.h */,
+				66FBD7251387548E004D4630 /* RKActiveResourceXMLParser.h */,
+				66FBD72713875513004D4630 /* ActiveResourceXML */,
 				259DF7841340294400233DF4 /* XML */,
 				253A08B51255212300976E89 /* JSON */,
 			);
@@ -1134,6 +1139,14 @@
 				259D5127132854A700897272 /* Runner */,
 			);
 			path = Specs;
+			sourceTree = "<group>";
+		};
+		66FBD72713875513004D4630 /* ActiveResourceXML */ = {
+			isa = PBXGroup;
+			children = (
+				66FBD729138755B1004D4630 /* RKActiveResourceXMLParser+libXML.m */,
+			);
+			name = ActiveResourceXML;
 			sourceTree = "<group>";
 		};
 		73057FC61331AA28001908EE /* JSONKit */ = {
@@ -1728,6 +1741,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				259DF7871340294400233DF4 /* RKXMLParser+libXML.m in Sources */,
+				66FBD73813875639004D4630 /* RKActiveResourceXMLParser+libXML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

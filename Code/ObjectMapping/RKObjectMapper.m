@@ -99,6 +99,8 @@ static const NSString* kRKModelMapperRailsDateFormatString = @"MM/dd/yyyy";
         className = @"RKJSONParser";
     } else if (_format == RKMappingFormatXML) {
         className = @"RKXMLParser";
+    } else if (_format == RKMappingFormatActiveResourceXML) {
+        className = @"RKActiveResourceXMLParser";
     }
     
     parserClass = NSClassFromString(className);
